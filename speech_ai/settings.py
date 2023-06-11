@@ -37,6 +37,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'speech_ai.urls'
+AUTHENTICATION_BACKENDS = ['django.contrib.auth.backends.ModelBackend']
+AUTH_USER_MODEL = 'WoofWaf.waf_admin'
 
 TEMPLATES = [
     {
