@@ -84,11 +84,12 @@ def review_fail(request, race_id):
 def login_waf(request):
     if waf_admin.objects.filter(username="admin").exists():
         admin = waf_admin.objects.get(username="admin")
-        admin.password = "admin"
+        admin.set_password("admin")
         admin.save()
     else:
-        admin = waf_admin.objects.create_user(username="admin", password="admin")
+        admin = waf_admin.objects.create_user()
         admin.save()
+
     if request.user.is_authenticated:
         # 若已经登陆，跳转index
         return redirect(reverse('WoofWaf-views-index'))
@@ -99,9 +100,9 @@ def login_waf(request):
     if request.method == 'POST':
         username = request.POST.get('username')
         password = request.POST.get('password')
-        user = authenticate(request, username=username, password=password)
-        if user is not None:
-            login(request, user)
+        authenticated_user = authenticate(username=username, password=password)
+        if authenticated_user is not None:
+            login(request, authenticated_user)
             return redirect(reverse('WoofWaf-views-index'))
         else:
             # 登录验证失败
