@@ -77,7 +77,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'speech_score',
         'USER': 'root',
-        'PASSWORD': 'Kosm133164',
+        'PASSWORD': 'gzj123',
         'HOST': '127.0.0.1',
         'PORT': 3306,
     }

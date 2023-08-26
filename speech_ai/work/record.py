@@ -559,7 +559,7 @@ class Recorder:
 # 连接数据库
         conn = pymysql.connect(host='127.0.0.1',
                                user='root',
-                               passwd='Kosm133164',
+                               passwd='gzj123',
                                port=3306,
                                db='speech_score',
                                charset='utf8')

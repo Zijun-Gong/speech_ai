@@ -298,7 +298,7 @@ def word_to_txt(file_content):
 #         global topic_
 #         topic_=request.POST.get('topic')
 #         # 连接数据库
-#         conn = pymysql.connect(host="localhost", port=3306, user="root", passwd="Kosm133164", db="test928")
+#         conn = pymysql.connect(host="localhost", port=3306, user="root", passwd="gzj123", db="test928")
 #         cursor = conn.cursor()
 #         # 执行 SQL 语句
 #         sql = "insert into `test_txt`(text) values(%s)"
@@ -644,7 +644,7 @@ def one_result(reqauest):
     conn = pymysql.connect(
         host='localhost',
         user='root',
-        password='Kosm133164',
+        password='gzj123',
         db='speech_score',
         cursorclass=pymysql.cursors.DictCursor
     )
