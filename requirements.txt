@@ -147,7 +147,7 @@ Twisted==22.10.0
 twisted-iocpsupport==1.0.2
 txaio==23.1.1
 typing_extensions==4.3.0
-urllib3==1.26.11
+urllib3==1.26.18
 vine==5.0.0
 webencodings==0.5.1
 Werkzeug==2.2.2
