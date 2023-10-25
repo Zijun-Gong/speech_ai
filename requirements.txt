@@ -150,7 +150,7 @@ typing_extensions==4.3.0
 urllib3==1.26.11
 vine==5.0.0
 webencodings==0.5.1
-Werkzeug==2.2.2
+Werkzeug==3.0.1
 widgetsnbextension
 win-inet-pton
 wincertstore==0.2
