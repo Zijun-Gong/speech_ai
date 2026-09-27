@@ -159,7 +159,7 @@ yarg==0.1.9
 zope.event==4.5.0
 zope.interface==5.4.0
 scikit-learn==0.21.3
-transformers==4.29.1
+transformers==5.10.1
 Babel
 backcall
 beautifulsoup4
