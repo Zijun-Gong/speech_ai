@@ -138,7 +138,7 @@ termcolor==1.1.0
 terminado==0.15.0
 threadpoolctl==3.1.0
 tinycss2==1.1.1
-torch==1.13.1
+torch==2.13.0
 torchaudio==0.13.1
 torchvision==0.14.1
 tqdm==4.64.0
